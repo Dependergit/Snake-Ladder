@@ -10,9 +10,12 @@ public class SnakeAndLadder
            while (position != 100)
         {
             if (dicecheck == 1)
-            {
-                position=position+diceroll;
-            }
+           {
+               if (position+diceroll<=100)
+               {
+                   position=position+diceroll;
+               }
+           }
             else if (dicecheck==2)
             {
                 position = position - diceroll;
