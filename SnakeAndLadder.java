@@ -4,6 +4,7 @@ public class SnakeAndLadder
     public static void main(String[] args)
     {
         int position = 0;
+	int dicecount = 0;
 
            while (position != 100)
         {
@@ -25,6 +26,8 @@ public class SnakeAndLadder
             {
                 position=position;
             }
+		dicecount = dicecount +1;
+           	System.out.println(dicecount + " player1 number of position " + position);
 
 	}
     }
